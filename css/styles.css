@@ -525,6 +525,7 @@ color: var(--WHITE, #FFF);
 
 .footer-form {
     display: flex;
+    gap 24px;
 }
 
 .footer-label {
@@ -598,9 +599,9 @@ margin-left: 16px;
     transform: translate(-50%, -50%);
     padding: 24px;
     min-height: 584px;
-    box-shadow: зі значенням 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding: 72px 24px 24px 24px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .modal-btn {
 width: 24px;
@@ -625,17 +626,12 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cu
 .modal-btn:hover, .modal-btn:focus {
     background-color: #404bbf;
     border: none;
-}
+    fill: #FFFFFF;
+    }
 
 .modal-btn-icon {
 fill:#2E2F42;
-    stroke-width: 1px;
-    stroke: rgba(0, 0, 0, 0.10);
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-}
-.modal-btn-icon:hover, .modal-btn-icon:focus  {fill: #FFFFFF;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-title {
@@ -651,7 +647,6 @@ fill:#2E2F42;
 
 .modal-field {
 margin-bottom: 8px;
-margin-bottom: 16px;
 }
 
 .modal-label {
@@ -718,6 +713,7 @@ padding-left: 38px;
 margin-bottom: 24px;
 }
 .form-btn {
+    display: block;
     border-radius: 4px;
     background: var(--IRIS, #4D5AE5);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
@@ -745,9 +741,13 @@ display: flex;
 align-items: center;
 }
 
-.check-text a {color: var(--IRIS, #4D5AE5);
-    line-height: 1.33;
-    text-decoration-line: underline;}
+.check-text {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color:#8e8f99;
+}
+
 
 .span-privacy {
     display: flex;
@@ -756,7 +756,7 @@ align-items: center;
     width: 16px;
     height: 16px;
     stroke-width: 1px;
-    stroke: var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.40));
+    stroke: var(--NAVY-BLUE-modal, rgba(17, 21, 98, 0.4));
     margin-right: 8px;
     fill: transparent;
     margin-top: 16px;
@@ -765,13 +765,9 @@ align-items: center;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     display: inline-flex;
 }
-.link-privacy {
-color: #4D5AE5;
-}
+
 .check-input:checked + .check-text span {
     background-color: var(--OCEAN, #404BBF);
-        stroke-width: 1px;
-        stroke: var(--OCEAN, #404BBF);
         border: none;
         fill: #F4F4FD;
 }
