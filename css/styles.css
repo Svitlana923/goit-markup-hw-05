@@ -525,7 +525,7 @@ color: var(--WHITE, #FFF);
 
 .footer-form {
     display: flex;
-    gap 24px;
+    gap: 24px;
 }
 
 .footer-label {
@@ -547,7 +547,7 @@ color: #ffffff;
 
 }
 .placeholder {
-    color #ffffff;
+color: #ffffff;
 }
 
 .footer-form-btn { 
