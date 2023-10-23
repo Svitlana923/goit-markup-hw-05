@@ -462,9 +462,7 @@ color: #4d5ae5;
     max-width: 264px
 }
 .footer-social-container {
-display: flex;
-flex-direction: column;
-margin-right: 80px;
+margin-right: auto;
 }
 
 .footer-social-container-title {
@@ -538,7 +536,6 @@ background-color: transparent;
 border-radius: 4px;
 border: 1px solid var(--WHITE, #FFF);
 padding-left: 16px;
-margin-right: 24px;
 font-size: 12px;
 line-height: 1.5;
 letter-spacing: 0.04em;
